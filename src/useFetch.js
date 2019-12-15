@@ -1,5 +1,11 @@
 import { useSafeReducer } from './useSafeReducer';
-import { REQUEST, SUCCESS, FAILURE, initialState, reducer } from "./requestReducer";
+import {
+    REQUEST,
+    SUCCESS,
+    FAILURE,
+    initialState,
+    reducer,
+} from './requestReducer';
 
 export const useFetch = ({ url, options = {} }) => {
     const [{ error, pending, data }, dispatch] = useSafeReducer(reducer, initialState);
