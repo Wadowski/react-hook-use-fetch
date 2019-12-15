@@ -3,9 +3,9 @@ const SUCCESS = 'SUCCESS';
 const FAILURE = 'FAILURE';
 
 const types = {
-    REQUEST: REQUEST,
-    SUCCESS: SUCCESS,
-    FAILURE: FAILURE,
+    REQUEST,
+    SUCCESS,
+    FAILURE,
 };
 
 const initialState = {
