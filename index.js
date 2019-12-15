@@ -1,4 +1,4 @@
-import { useFetch } from "./src/useFetch";
+import { useFetch } from './src/useFetch';
 
 export {
     useFetch,

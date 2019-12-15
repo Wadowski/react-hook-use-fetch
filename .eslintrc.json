@@ -23,6 +23,31 @@
     "rules": {
         "import/prefer-default-export": [
             0
+        ],
+        "indent": [
+            "error",
+            4,
+            {
+                "SwitchCase": 1,
+                "ObjectExpression": "first"
+            }
+        ],
+        "max-len": [
+            "error",
+            120,
+            {
+                "ignoreComments": true
+            }
+        ],
+        "comma-dangle": [
+            "error",
+            {
+                "arrays": "always-multiline",
+                "objects": "always-multiline",
+                "imports": "always-multiline",
+                "exports": "always-multiline",
+                "functions": "never"
+            }
         ]
     }
 }
