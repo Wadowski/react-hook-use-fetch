@@ -1,5 +1,5 @@
 {
-    "name": "react-hook-use-fetch",
+    "name": "@wadowski/react-hook-use-fetch",
     "version": "0.0.1",
     "main": "index.js",
     "author": "Dominik Wadowski",
