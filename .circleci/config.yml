@@ -9,11 +9,11 @@ jobs:
             - run: yarn run lint
     deploy:
         docker:
-            -   image: circleci/node:12.13.1-browsers
-            steps:
-                - checkout
-                - run: yarn
-                - run: npx semantic-release
+            - image: circleci/node:12.13.1-browsers
+        steps:
+            - checkout
+            - run: yarn
+            - run: npx semantic-release
 
 
 workflows:

@@ -6,7 +6,6 @@
   ],
   "prepare": [
     "@semantic-release/changelog",
-    "@semantic-release/npm",
     "@semantic-release/git",
     {
       "path": "@semantic-release/git",
