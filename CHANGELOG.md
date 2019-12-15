@@ -1,3 +1,10 @@
+## [1.1.1](https://github.com/Wadowski/react-hook-use-fetch/compare/v1.1.0...v1.1.1) (2019-12-15)
+
+
+### Bug Fixes
+
+* **useFetch:** Setup simple fetch hook for publishing ([b46df6c](https://github.com/Wadowski/react-hook-use-fetch/commit/b46df6c4e8ba1653518109abc881cec2f7a1701b))
+
 # [1.1.0](https://github.com/Wadowski/react-hook-use-fetch/compare/v1.0.0...v1.1.0) (2019-12-15)
 
 
