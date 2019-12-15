@@ -1,8 +1,6 @@
 import { useSafeReducer } from './useSafeReducer';
 import {
-    REQUEST,
-    SUCCESS,
-    FAILURE,
+    types,
     initialState,
     reducer,
 } from './requestReducer';
@@ -11,16 +9,16 @@ export const useFetch = ({ url, options = {} }) => {
     const [{ error, pending, data }, dispatch] = useSafeReducer(reducer, initialState);
 
     const makeRequest = async () => {
-        dispatch({ type: REQUEST });
+        dispatch({ type: types.REQUEST });
         try {
             const response = await fetch(url, options);
             if (!response.ok) {
                 throw response;
             }
 
-            dispatch({ type: SUCCESS, payload: await response.json() });
+            dispatch({ type: types.SUCCESS, payload: await response.json() });
         } catch (err) {
-            dispatch({ type: FAILURE, payload: err.json ? await err.json() : err.message });
+            dispatch({ type: types.FAILURE, payload: err.json ? await err.json() : err.message });
         }
     };
 

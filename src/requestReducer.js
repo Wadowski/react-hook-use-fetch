@@ -2,6 +2,12 @@ const REQUEST = 'REQUEST';
 const SUCCESS = 'SUCCESS';
 const FAILURE = 'FAILURE';
 
+const types = {
+    REQUEST: REQUEST,
+    SUCCESS: SUCCESS,
+    FAILURE: FAILURE,
+};
+
 const initialState = {
     pending: false,
     error: false,
@@ -10,19 +16,19 @@ const initialState = {
 
 const reducer = (state, action) => {
     switch (action.type) {
-        case REQUEST:
+        case types.REQUEST:
             return {
                 error: false,
                 pending: true,
                 data: null,
             };
-        case SUCCESS:
+        case types.SUCCESS:
             return {
                 error: false,
                 pending: false,
                 data: action.payload,
             };
-        case FAILURE:
+        case types.FAILURE:
             return {
                 error: true,
                 pending: false,
@@ -36,7 +42,5 @@ const reducer = (state, action) => {
 export {
     reducer,
     initialState,
-    REQUEST,
-    SUCCESS,
-    FAILURE,
+    types,
 };
