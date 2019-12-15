@@ -1,0 +1,21 @@
+{
+  "verifyConditions": [
+    "@semantic-release/changelog",
+    "@semantic-release/npm",
+    "@semantic-release/git"
+  ],
+  "prepare": [
+    "@semantic-release/changelog",
+    "@semantic-release/npm",
+    "@semantic-release/git",
+    {
+      "path": "@semantic-release/git",
+      "assets": [
+        "package.json",
+        "src",
+        "index.js"
+      ],
+      "message": "chore(release): ${nextRelease.version} [skip ci]"
+    }
+  ]
+}
