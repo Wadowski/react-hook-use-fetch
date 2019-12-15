@@ -1,39 +1,5 @@
 import { useSafeReducer } from './useSafeReducer';
-
-const REQUEST = 'REQUEST';
-const SUCCESS = 'SUCCESS';
-const FAILURE = 'FAILURE';
-
-const initialState = {
-    pending: false,
-    error: false,
-    data: null,
-};
-
-const reducer = (state, action) => {
-    switch (action.type) {
-        case REQUEST:
-            return {
-                error: false,
-                pending: true,
-                data: null,
-            };
-        case SUCCESS:
-            return {
-                error: false,
-                pending: false,
-                data: action.payload,
-            };
-        case FAILURE:
-            return {
-                error: true,
-                pending: false,
-                data: action.payload,
-            };
-        default:
-            return state;
-    }
-};
+import { REQUEST, SUCCESS, FAILURE, initialState, reducer } from "./requestReducer";
 
 export const useFetch = ({ url, options = {} }) => {
     const [{ error, pending, data }, dispatch] = useSafeReducer(reducer, initialState);

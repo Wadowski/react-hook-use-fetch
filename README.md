@@ -8,4 +8,3 @@ Custom react hook for making REST API requests
 
 - node 12.13.1
 
-
