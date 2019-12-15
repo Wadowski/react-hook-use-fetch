@@ -10,7 +10,7 @@ jobs:
         docker:
             - image: circleci/node:12.13.1-browsers
         steps:
-            - checkut
+            - checkout
             - run: yarn run lint
 
 workflows:
