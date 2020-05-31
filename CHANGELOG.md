@@ -1,3 +1,10 @@
+## [1.0.2](https://github.com/Wadowski/react-hook-use-fetch/compare/v1.0.1...v1.0.2) (2020-05-31)
+
+
+### Bug Fixes
+
+* **package.json:** does not require node strit version ([0208acb](https://github.com/Wadowski/react-hook-use-fetch/commit/0208acb42dc8c5f410b1d2122c0329fad495a2ca))
+
 ## [1.0.1](https://github.com/Wadowski/react-hook-use-fetch/compare/v1.0.0...v1.0.1) (2019-12-15)
 
 
