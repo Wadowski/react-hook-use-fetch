@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/Wadowski/react-hook-use-fetch/compare/v1.0.0...v1.0.1) (2019-12-15)
+
+
+### Performance Improvements
+
+* **reducer:** eslint cleanup ([0f7a5bd](https://github.com/Wadowski/react-hook-use-fetch/commit/0f7a5bdfa73ce89349dd52ed4ee23c086baa2001))
+
 # 1.0.0 (2019-12-15)
 
 
