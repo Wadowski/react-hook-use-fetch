@@ -1,11 +1,13 @@
 const REQUEST = 'REQUEST';
 const SUCCESS = 'SUCCESS';
 const FAILURE = 'FAILURE';
+const CLEAN = 'CLEAN';
 
 const types = {
     REQUEST,
     SUCCESS,
     FAILURE,
+    CLEAN,
 };
 
 const initialState = {
@@ -34,6 +36,7 @@ const reducer = (state, action) => {
                 pending: false,
                 data: action.payload,
             };
+        case types.CLEAN:
         default:
             return state;
     }

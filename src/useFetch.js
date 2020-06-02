@@ -22,7 +22,11 @@ export const useFetch = ({ url, options = {} }) => {
         }
     };
 
-    return [{ error, pending, data }, makeRequest];
+    const cleanRequest = () => {
+        dispatch({ type: types.CLEAN });
+    };
+
+    return [{ error, pending, data }, makeRequest, cleanRequest];
 };
 
 export default useFetch;
