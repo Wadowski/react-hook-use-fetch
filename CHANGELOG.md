@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/Wadowski/react-hook-use-fetch/compare/v1.1.0...v1.2.0) (2020-06-08)
+
+
+### Features
+
+* **usefetch:** request body could be provided as a parameter on makeRequest ([6f72edb](https://github.com/Wadowski/react-hook-use-fetch/commit/6f72edb9909cace03df7e6cecc69f2f9e60a233e))
+
 # [1.1.0](https://github.com/Wadowski/react-hook-use-fetch/compare/v1.0.3...v1.1.0) (2020-06-02)
 
 
