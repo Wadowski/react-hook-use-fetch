@@ -9,7 +9,7 @@ import {
 export const useFetch = ({ url, options: defaultOptions = {} }) => {
     const [{ error, pending, data }, dispatch] = useSafeReducer(reducer, initialState);
 
-    const makeRequest = async ({ options = {} }) => {
+    const makeRequest = async ({ options = {} } = {}) => {
         dispatch({ type: types.REQUEST });
         try {
             const response = await fetch(url, merge(defaultOptions, options));
