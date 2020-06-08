@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/Wadowski/react-hook-use-fetch/compare/v1.0.3...v1.1.0) (2020-06-02)
+
+
+### Features
+
+* **usefetch.js:** add cleanup action ([93fc171](https://github.com/Wadowski/react-hook-use-fetch/commit/93fc171c28d15e3ba4b969343fc4af1d6498f7c4))
+
 ## [1.0.3](https://github.com/Wadowski/react-hook-use-fetch/compare/v1.0.2...v1.0.3) (2020-05-31)
 
 
