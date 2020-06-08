@@ -1,3 +1,10 @@
+## [1.2.1](https://github.com/Wadowski/react-hook-use-fetch/compare/v1.2.0...v1.2.1) (2020-06-08)
+
+
+### Bug Fixes
+
+* **usefetch:** make possible requests without params again ([55aeeeb](https://github.com/Wadowski/react-hook-use-fetch/commit/55aeeebc729e06232f443bc624e459e98b2b2a9a))
+
 # [1.2.0](https://github.com/Wadowski/react-hook-use-fetch/compare/v1.1.0...v1.2.0) (2020-06-08)
 
 
